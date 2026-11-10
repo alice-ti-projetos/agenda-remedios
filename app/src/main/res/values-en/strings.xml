@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="add_meds">Add medicine on the schedule</string>
+    <string name="app_name">Medicine</string>
+    <string name="add_meds_warning">Add medicine on the schedule</string>
+</resources>

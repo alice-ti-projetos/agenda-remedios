@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Medicine schedule</string>
+    <string name="add_meds_warning">Add medicine on the schedule</string>
+</resources>
