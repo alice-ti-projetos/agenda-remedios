@@ -3,4 +3,9 @@
     <string name="add_meds">Add medicine on the schedule</string>
     <string name="app_name">Medicine</string>
     <string name="add_meds_warning">Add medicine on the schedule</string>
+    <string name="med_name_hint" >Medication name</string>
+    <string name="cancel" >Cancel</string>
+    <string name="save" >Save</string>
+    <string name="add_med_title">Add medication title</string>
+    <string name="med_time_hint">Time (e.g. 08:00)</string>
 </resources>

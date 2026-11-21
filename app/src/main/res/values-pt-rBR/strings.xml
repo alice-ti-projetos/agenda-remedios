@@ -3,4 +3,9 @@
     <string name="add_meds">Adicionar remédio na agenda</string>
     <string name="app_name">Agenda de remédios</string>
     <string name="add_meds_warning">Adicione remédios na agenda</string>
+    <string name="med_name_hint" >Nome do remédio</string>
+    <string name="cancel" >Cancelar</string>
+    <string name="save" >Salvar</string>
+    <string name="add_med_title">Adicone um título para o remédio</string>
+    <string name="med_time_hint">Hora (ex. 08:00)</string>
 </resources>

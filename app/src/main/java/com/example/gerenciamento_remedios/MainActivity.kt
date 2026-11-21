@@ -5,14 +5,17 @@ package com.example.gerenciamento_remedios
 import android.os.Bundle
 import android.os.PersistableBundle
 import androidx.appcompat.app.AppCompatActivity
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 //atividade principal
 class MainActivity : AppCompatActivity() {
     // funcao do que o android vai fazer qnd o app for aberto, este cria a atividade
-    override fun onCreate(savedInstanceState: Bundle?, persistentState: PersistableBundle?) {
-      //cria a atividade quando o app inicia
-        super.onCreate(savedInstanceState, persistentState)
-        // coloca o layout como o que vc passou
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        findViewById<FloatingActionButton>(R.id.act_btn_add_med).setOnClickListener {
+            AddMedDialogFragment().show(supportFragmentManager, AddMedDialogFragment.TAG)
+        }
     }
 }

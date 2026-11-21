@@ -1,44 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <!--CRIE UM FRAGMENTO PARA SER O PROMPT DE CRIAR REMEDIOS PARA USAR NESTA ATIVIDADE!!-->
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragment_container"
+        android:name="com.example.gerenciamento_remedios.AgendaFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
-    <!--CRIE UM FRAGMENTO PARA SER A AGENDA PARA USAR NESTA ATIVIDADE!!-->
-
-    <!--Botao para adicionar remedios-->
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/act_btn_add_med"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="339dp"
-        android:layout_marginTop="659dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
+        android:layout_margin="16dp"
         android:clickable="true"
-        android:contentDescription="@string/add_meds_warning"
         android:focusable="true"
+        android:contentDescription="@string/add_med_title"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@android:drawable/ic_input_add" />
-
-    <!--Texto de aviso caso nao haja remédios registrados na agenda-->
-    <TextView
-        android:id="@+id/txt_med_warn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="173dp"
-        android:layout_marginTop="188dp"
-        android:layout_marginEnd="180dp"
-        android:layout_marginBottom="524dp"
-        android:text="@string/add_meds_warning"
-        android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
